@@ -1,0 +1,931 @@
+ @import url("https://use.typekit.net/unv1rqq.css");
+
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box; 
+    margin:0; padding:0;
+}
+
+/*--------------------------- lettertype etc -------------------------*/
+h1, h2, h3, h4, h5, h6, p, a, button, li, option, input{
+    font-family: futura-pt, sans-serif;
+}
+
+header a{
+    color:white;
+}
+
+header ul:first-of-type div:first-of-type li a{
+    font-size: 16px;
+    color:white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+h1{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+/*titel van product*/
+h2{
+    font-size: 20px;
+    font-weight: 100;
+    width: 75%;
+}
+
+ul li a h2{
+    font-size: 14px;
+}
+
+/*prijs van product*/
+p strong{
+    font-size: 20px;
+    color:#555555;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+}
+
+/*prijs van product in misschien ook leuk*/
+ul li a p strong{
+    font-size: 14px;
+}
+
+/*kopjes van product details*/
+h4{
+    color:#999999;
+    font-size:14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    
+}
+
+ div h4 {
+    margin-top:1em;
+}
+
+
+h6,p,a{
+    font-size: 16px;
+}
+
+h6{
+    display: inline;
+}
+
+p{
+    display: block;
+}
+
+p b{
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size:12px;
+}
+
+
+section a{
+    text-decoration: underline;
+}
+
+
+
+
+/*---------------------- wat algemene code -------------------------*/
+section{
+    padding: 0 1em;
+    margin-top: 2em;
+    
+    position: relative;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button{
+    margin:0;
+    text-transform: uppercase;
+    background-color: white;
+    border:none;
+    
+    appearance:none;
+    vertical-align:text-bottom;
+}
+
+ul li p{
+    text-decoration: none;
+}
+
+
+/*--------------------------- header  ------------------------------*/
+header{
+    background-color: #2d2d2d;
+    color:white;
+}
+
+/* iconen en zoekbalk*/
+header nav > ul:first-of-type{
+    display: flex;
+    justify-content: space-between;
+    background-color: inherit;
+}
+
+header ul:first-of-type div{
+    display: flex;
+    padding: 0.5em;
+}
+
+   
+header ul:first-of-type div li {
+    display: flex;
+    align-items: center;
+    height: 100%;   
+    margin: 0.5em;
+}
+
+/*DAMES en HEREN linkjes*/
+header ul:first-of-type div:first-of-type li:nth-of-type(3) a,header ul:first-of-type div:first-of-type li:last-of-type a{
+    display: none;
+}
+
+header ul:first-of-type div li button{
+    background-color: inherit;
+    width: auto;
+}
+
+header ul:first-of-type div li img{
+    height: 20px;
+     width: auto; 
+}
+
+header ul:first-of-type div:last-of-type li:first-of-type input{
+    display: none;
+
+}
+
+header ul:first-of-type div:last-of-type li:nth-of-type(2){
+     display: none;
+}
+
+/*lijst met categorien webversie*/
+header ul:nth-of-type(2){
+    display: none;
+}
+
+/* section menu mobiel versie */
+header section:first-of-type{
+    margin:0; padding: 0;
+    background-color:white;
+	
+    position:fixed;
+	top:0;
+	left:0;
+	width:65%;
+	height:100%;
+	
+	transform:translateX(-120%);
+	transition:0.5s;
+    z-index:1;
+    
+}
+
+header section:first-of-type ul{
+    margin-top: 0.5em;
+    width: 100%;
+    height: 90%;
+    list-style-type: none;
+    overflow: scroll;
+}
+
+header section:first-of-type div{
+    display: flex;
+    width: 100%;
+}
+
+header section:first-of-type div h2{
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    height: 2em;
+    color: black;
+    margin-top:1em;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+header section:first-of-type div h2:first-of-type{
+    border-right: 1px solid #2d2d2d;
+}
+
+header section:first-of-type ul li{
+    background-color: #eeeeee;
+    width: 90%;
+    height: 4em;
+    margin: 1em auto;
+}
+
+
+header section:first-of-type ul li a{
+    display: block;
+    height: 100%; width: 100%;
+    padding: 1.3em 1em;
+    color:#2d2d2d;
+    letter-spacing: 0.1em;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+header section:first-of-type > button{
+    width: 15%;
+    height: 2.5em;
+    font-size: 2em;
+    font-weight: 600;
+    
+    border: none;
+    background-color: #2d2d2d;
+    color:white;
+    
+    z-index: 1;
+    
+    position:absolute;
+	right:-15%;
+	top: 0;
+}
+
+
+
+
+/* section hover tevoorschijn */
+header section:last-of-type{
+    display:none;
+}
+
+
+/*breadcrumbs*/
+header nav > ul:last-of-type{
+    display: none;
+}
+
+/*---------------------------- main  -------------------------------*/
+
+main{
+    position: relative;
+}
+
+
+main ul:first-of-type{
+    padding:0;margin: 0;
+}
+
+/*terug naar boven*/
+main > a{
+    display: block;
+    color:#2d2d2d;
+    background-color: #f8f8f8;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+    
+    width:100%;
+    height:3em;
+    padding:1em;
+    text-align: center;
+    
+}
+
+
+/*---------------------------- footer ------------------------------*/
+footer section{
+    width: 100%;
+    margin: 0;
+    padding: 1em;
+}
+
+footer section:first-of-type{
+    display: none;
+}
+
+
+footer section:last-of-type{
+   background-color: #DDDDDD;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/*----------------------------- section 1 --------------------------------*/
+main section:first-of-type{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ul foto's schoenen*/
+main section:first-of-type ul:first-of-type{
+    width: 25%;
+    height:auto;
+    display: none;
+}
+
+
+main section:first-of-type img{
+    width:100%;
+    height: auto;
+}
+
+
+/* ul puntjes*/
+main section:first-of-type ul:nth-of-type(2){
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10%;
+    left: calc(50% - 4em);
+        
+     width:8em;
+}
+
+
+/*puntjes op foto mobiel formaat*/
+main section:first-of-type ul:nth-of-type(2) li button {
+    background-color: transparent;
+    font-size: 2em;
+    color:white;
+    width:30px;
+}
+
+/*puntje actief*/
+main section:first-of-type ul:nth-of-type(2) li button.active{
+    color:grey;
+}
+
+/*----------------------------- section 2 --------------------------------*/
+main section:nth-of-type(2){
+    margin-top:1em;
+}
+
+main section:nth-of-type(2) div{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*in winkemand knop*/
+main section:nth-of-type(2) div:nth-of-type(3) button:nth-of-type(1){
+    width: 80%;
+    height:40px;
+    color:white;
+    background-color: #018849;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+}
+
+/*item delen knop*/
+main section:nth-of-type(2) div button:nth-of-type(1){
+   width:20px; height: 20px;
+    background-color: transparent;
+}
+
+/*item favorieten knop*/
+main section:nth-of-type(2) button:nth-of-type(2){
+    width:40px; height: 40px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+}
+
+
+main button img{
+    width: 20px;
+    height: 20px;
+    display:block;
+}
+
+/* fav knop img*/
+main section:nth-of-type(2) div:nth-of-type(3) button:nth-of-type(2) img{
+    width: 40px; height: 40px;
+    border-radius: 50%;
+}
+
+main select{
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0px;
+    border: 1px solid grey;
+    background-color: white;
+}
+
+/*----------------------------- section 3 -------------------------*/
+main section:nth-of-type(3){
+    height: 240px;
+    overflow: hidden;
+}
+
+/*toon minder knop*/
+main section:nth-of-type(3) + button{
+    display:block;
+    color: #2D2D2D;
+    font-size: 1em;
+    width: 224px;
+    height:36px;
+    border: 2px solid #ddd;
+    margin:20px calc(100%/2 - 112px);
+}
+
+main section:nth-of-type(3) ul{
+    list-style-type:disc;
+    margin-left: 1em;
+}
+
+main section:nth-of-type(3)::after{
+  content:"";
+  position:absolute;
+  left:0; right:0;bottom:0;
+  width:100%; height:100%;
+  background-image: linear-gradient(transparent, white)
+}
+
+/*----------------------------- aside -------------------------*/
+main aside{
+    border-top: 1px solid lightgrey;
+    padding-top: 2em;
+}
+
+main aside ul{
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+    margin-top: 1em;
+    
+}
+
+main aside ul li{
+    width:60%;
+    flex-shrink: 0;
+        
+    padding:0;
+    margin:0.5em;
+}
+
+
+main aside ul li a{
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    
+}
+
+
+main aside ul li a:first-of-type{
+    margin-left: 0;
+}
+
+main aside ul li a:last-of-type{
+    margin-right: 0;
+}
+
+
+main aside ul li a img{
+   width:100%;
+    order: -1;
+}
+
+
+/* ook leuk fav knop*/
+main aside ul li a button{
+    width:36px; height:36px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    
+    position: absolute;
+    top:5%;
+    right:5%;
+    
+}
+
+/* ook leuk fav knop img*/
+main aside ul li a button img{
+    width:36px; height:36px;
+    border-radius: 50%;
+}
+
+/*------------------------------------------- states---------------------------------------------*/
+
+a:active{
+    text-decoration: none;
+}
+
+a:visited{
+    color:inherit;
+}
+
+:focus{
+    outline: 4px solid #0770cf;
+}
+
+/*-------------------------------------------Responsive maken----------------------------------*/
+@media (min-width:340px){
+    header ul:first-of-type div:last-of-type li:nth-of-type(2){
+        display: flex;
+    }
+}
+
+
+@media (min-width:570px){
+   main aside ul{
+        width: 100%;
+        padding: 0px 15%;
+    } 
+    
+    
+    main aside ul li{
+        width: 30%;
+    }
+    
+    main > a{    
+    display: none; 
+    }
+    
+    /* section menu mobiel versie */
+    header section:first-of-type{
+    margin:0; padding: 0;
+    background-color:white;
+	
+    position:fixed;
+	top:0;
+	left:0;
+	width:65%;
+	height:100%;
+	
+	transform:translateX(-120%);
+	transition:0.5s;
+    z-index:1;   
+    }
+    
+    header section:first-of-type ul li{
+    height: 8em;
+    margin: 1em auto;
+    }
+    
+    header section:first-of-type ul li:first-of-type{
+    background-image:url("../images/menu_background/nieuw.jpeg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    }
+
+    header section:first-of-type ul  li:nth-of-type(2){
+    background-image:url("../images/menu_background/kleding.jpeg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    }
+
+    header section:first-of-type ul li:nth-of-type(3){
+    background-image:url("../images/menu_background/schoenen.jpeg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    }
+    
+    header section:first-of-type ul li a{
+    display: block;
+    height: 100%; width: 100%;
+    padding: 2em 1em;
+    color:#2d2d2d;
+    letter-spacing: 0.1em;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+    }
+}
+
+@media (min-width:720px){
+/*----------------------  header responsive ------------------------------*/        
+    
+    header{
+        width: 100%;
+        position:relative;
+    }
+    
+    /* iconen en zoekbalk*/
+    header ul:first-of-type div:last-of-type li:first-of-type input{
+    display: inline;
+    padding: 0.5em 1em;
+    width:250px;
+    border-radius: 1.5em;
+    border:none;
+    padding-right: 1.89rem;
+    }
+    
+    header ul:first-of-type div:last-of-type li:first-of-type button{
+        margin-left: -1.89rem;
+        background-color: #0770cf;
+        height: 1.89rem;
+        width:1.89rem;
+        border-radius: 50%;
+    }
+    
+    header ul:first-of-type div:first-of-type li:first-of-type{
+        display: none;
+    }
+    
+    header ul:first-of-type div:first-of-type li:nth-of-type(3) a,header ul:first-of-type div:first-of-type li:last-of-type a{
+        display: block;
+        width:100%; height: 100%;
+        padding:1em 1em 0 1em;
+    }
+    
+    header ul:first-of-type div:first-of-type li.selected {
+        background-color: #525050;
+    }
+    
+    header ul:first-of-type div:last-of-type li a{
+        align-items: center;
+    }
+    
+    
+    /*lijst met categorien webversie*/
+    header ul:nth-of-type(2){
+    padding-left: 2em;
+    display: flex;
+        
+    background-color: #525050;
+    }
+    
+    
+    header ul:nth-of-type(2) li button{
+        background-color: inherit;
+        color: white;
+        text-transform: none;
+        font-size: 0.9em;
+        padding: 1em 0.8em;
+    }
+    
+    header ul:nth-of-type(2) li:first-of-type button{
+        padding-left: 0;
+    }
+    
+    header ul:nth-of-type(2) li:last-of-type button{
+        padding-right: 0;
+    }
+    
+    
+    header section:first-of-type{
+        display: none;
+    }
+    
+    
+    
+    
+    
+    /*breadcrumbs*/
+    header nav > ul:last-of-type{
+    display: flex;
+    list-style: none;
+    width:100%;
+    height: 3em;
+    align-items: center;
+    background-color: white;
+    padding-left: 2em;
+
+    }
+    
+    header nav > ul:last-of-type li{
+        margin: 0.25em;
+    }
+    
+    header ul:last-of-type li, header nav > ul li a{
+        color: #2d2d2d;
+        font-size: 14px;
+    }
+    
+    header nav > ul:last-of-type li:last-of-type a{
+        color:#999999;
+    }
+    
+    
+    
+    
+    
+/*----------------------  main responsive ------------------------------*/     
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1em 1em;
+    }
+/*----------------------  footer responsive ------------------------------*/    
+    
+   footer section:first-of-type{
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-around;
+    }
+
+    footer section:first-of-type ul li{
+    padding: 0.25em;
+    }
+
+    footer section:first-of-type ul li a{
+    text-decoration: none;
+    }
+
+    footer section:first-of-type ul:last-of-type li{
+    display: flex;
+    }
+
+    footer section:first-of-type ul:last-of-type li button{
+    background-color: inherit;
+    font-weight: 600;
+    padding-left: 0.5em;
+    
+    } 
+    
+    
+/*----------------------  section 1 responsive ------------------------------*/      
+    main section:first-of-type{
+        width:40%;
+        max-width: 513px;
+    }
+    
+    /*foto's schoenen rijtje*/
+    main section:first-of-type ul:first-of-type{
+    width: 25%;
+    height:20%;
+    display: block;
+}
+    main section:first-of-type img{
+    width:70%;   
+    height: auto;
+}
+    
+    /*puntjes voor mobiel formaat*/
+    main section:first-of-type ul:nth-of-type(2){
+    display: none;
+}
+
+    
+    
+/*----------------------  section 2 responsive ------------------------------*/      
+    main section:nth-of-type(2){
+       width: 40%;
+        max-width: 400px;
+    }
+    
+/*----------------------  section 3 responsive ------------------------------*/    
+    
+    main section:nth-of-type(3){
+        width:100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    main section:nth-of-type(3) div{
+        width:25%;
+        max-width: 320px;
+        
+    }
+    
+    main section:nth-of-type(3) div p{
+        font-size: 16px;
+        word-spacing: 0.2em;
+    }
+    
+
+
+/*----------------------  section 4 responsive ------------------------------*/  
+    main aside{
+        width: 100%;
+        padding: 2em 15%;
+        margin-top: 2em;
+    } 
+    
+    main aside ul li{
+        width: 23%;
+    }
+}
+
+@media (min-width:800px){
+    header ul:nth-of-type(2) li button{
+        padding: 1em;
+    }
+}
+
+@media (min-width:1020px){
+    header >  ul:first-of-type{
+        padding: 0em 5vw;
+    }
+}
+
+/*------------------------------------ animaties en javascript dingen-------------------------*/
+
+header section:first-of-type.toonSection{
+    transform: translateX(0);
+}
+
+/*------------ header section tonen ----------*/
+header nav section:last-of-type.laatZien {
+   display: block;
+    margin: 0;padding: 0;
+    background-color: #eeeeee;
+    z-index: 1;
+    padding: 2em;
+    height: 400px;
+    width:80vw;
+    position: absolute;
+    bottom:-352px;
+    left: 2em;
+}
+
+header section:last-of-type.laatZien ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    }
+    
+    header section:last-of-type.laatZien ul li{
+        height: 2em;
+        width: 25%;
+        margin: 0.5em;
+    }
+    
+    header section:last-of-type.laatZien  ul li a{
+        text-decoration: none;
+        color: #2d2d2d;
+        font-size: 14px;
+    }
+
+    header ul:nth-of-type(2) li button.knopje{
+        background-color: #eeeeee;
+        color:black;
+    }
+
+
+/*------------ knop toon minder ----------*/
+main section:nth-of-type(3).uitgeklapt{
+    height: auto;
+}
+
+main section:nth-of-type(3).uitgeklapt::after{
+    display: none;
+}
+
+
+
+/*------------ in winkeland ----------*/
+@keyframes rondje-draaien {
+  0% {
+    transform: rotate(0deg)
+    
+  }
+  50% {
+    transform: rotate(180deg) 
+  }
+ 100%{
+    transform: rotate(360deg) 
+  }
+}
+
+main section:nth-of-type(2) div:last-of-type button:first-of-type.inwinkelmand{
+   animation-name:rondje-draaien;
+  animation-duration:0.8s;
+  animation-iteration-count:1;
+  animation-timing-function: linear; 
+}
+
+
+/*-------------- favorieten -------------*/
+ @keyframes hart-animation{
+  0%{
+    transform:scale(1);
+  }
+  35%{
+    transform:scale(1.5);
+  }
+  50%{
+    transform:scale(1);
+  }
+  75%{
+    transform:scale(1.25);
+  }
+  100%{
+    transform:scale(1);
+  }
+}
+
+ main section:nth-of-type(2) div:last-of-type button img.kloppend{  
+  animation-name:hart-animation;
+  animation-duration:0.8s;
+  animation-iteration-count:2;
+  animation-timing-function: linear;
+}
+
